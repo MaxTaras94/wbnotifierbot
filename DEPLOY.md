@@ -66,10 +66,8 @@ poetry run python -m wbnotifierbot
 Получим текущий адрес до Pytnon-интерпретатора в poetry виртуальном окружении Poetry:
 
 ```bash
-poetry shell
-which python
+poetry shell which python
 ```
-
 Скопируем путь до интерпретатора Python в виртуальном окружении.
 
 Настроим systemd-юнит для автоматического запуска бота, подставив скопированный путь в ExecStart, а также убедившись,
@@ -84,10 +82,10 @@ After=network.target
 [Service]
 User=www
 Group=www-data
-WorkingDirectory=/home/www/code/wbnotifierbot
+WorkingDirectory=~/code/wbnotifierbot
 Restart=on-failure
 RestartSec=2s
-ExecStart=/home/www/.cache/pypoetry/virtualenvs/wbnotifierbot-dRxws4wE-py3.11/bin/python -m wbnotifierbot
+ExecStart=/root/.cache/pypoetry/virtualenvs/wbnotifierbot-niaf6P17-py3.12/bin/python -m wbnotifierbot
 
 [Install]
 WantedBy=multi-user.target
