@@ -3,7 +3,7 @@ from telegram import Chat, Update
 from telegram.ext import ContextTypes
 from typing import cast
 from wbnotifierbot.handlers.response import send_response
-from wbnotifierbot.service.check_user_is_admin import is_user_admin
+from wbnotifierbot.services.check_user_is_admin import is_user_admin
 from wbnotifierbot.templates import render_template
 
 

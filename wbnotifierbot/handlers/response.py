@@ -9,7 +9,7 @@ async def send_response(
     update: Update,
     context: ContextTypes.DEFAULT_TYPE,
     response: str,
-    keyboard: InlineKeyboardMarkup=None,
+    keyboard: InlineKeyboardMarkup | None = None,
 ) -> None:
     args = {
         "chat_id": _get_chat_id(update),
