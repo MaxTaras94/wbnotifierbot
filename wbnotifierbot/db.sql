@@ -4,6 +4,6 @@ create table bot_users (
   created_at timestamp default current_timestamp not null
 );
 
-insert into bot_user (telegram_user_id, is_admin) values 
+insert into bot_users (telegram_user_id, is_admin) values 
   (1676532442, true),
   (449441982, true);
