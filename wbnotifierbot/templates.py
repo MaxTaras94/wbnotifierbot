@@ -5,7 +5,7 @@ import jinja2
 from wbnotifierbot import config
 
 
-def render_template(template_name: str, data: dict | None = None) -> str:
+def render_template(template_name: str, data: dict = None) -> str:
     if data is None:
         data = {}
     template = _get_template_env().get_template(template_name)
