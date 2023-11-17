@@ -8,7 +8,7 @@ from wbnotifierbot.templates import render_template
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if is_user_admin(cast(Chat, update.effective_chat).id:
+    if is_user_admin(cast(Chat, update.effective_chat).id):
         await send_response(update, context, 
                             response=render_template(
                                             "start_4_admin.j2", 
