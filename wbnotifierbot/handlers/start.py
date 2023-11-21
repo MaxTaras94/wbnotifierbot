@@ -16,4 +16,4 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                             )
         )
     else:
-        await send_response(update, context, response=render_template("start.j2"))
+        await send_response(update, context, response=render_template("start.j2", data={"name":update.message.from_user.username}) )
