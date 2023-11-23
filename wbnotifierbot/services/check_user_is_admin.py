@@ -1,8 +1,3 @@
-import urllib.parse
-
-import httpx
-
-from wbnotifierbot import config
 from wbnotifierbot.db import execute, fetch_one
 
 
