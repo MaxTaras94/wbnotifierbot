@@ -85,7 +85,7 @@ Group=www-data
 WorkingDirectory=home/www/code/wbnotifierbot
 Restart=on-failure
 RestartSec=2s
-ExecStart="путь до интерпритатора в .venv" -m wbnotifierbot
+ExecStart="путь до интерпретатора в .venv" -m wbnotifierbot
 
 [Install]
 WantedBy=multi-user.target
