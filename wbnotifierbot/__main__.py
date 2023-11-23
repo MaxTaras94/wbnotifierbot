@@ -18,7 +18,7 @@ from wbnotifierbot.services.wildberries import wildberries
 
 COMMAND_HANDLERS = {
     "start": handlers.start,
-    "help": handlers.help_,
+    "help": handlers.help,
 }
 
 logging.basicConfig(
