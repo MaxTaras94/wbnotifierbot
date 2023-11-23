@@ -13,7 +13,7 @@ WBAPISTATISTIC=os.getenv("WBAPISTATISTIC", "")
 WBURLGETDETAIL=os.getenv("WBURLGETDETAIL", "")
 WBURLGETSTOCKS=os.getenv("WBURLGETSTOCKS", "")
 WBURLCURSORLIST=os.getenv("WBURLCURSORLIST", "")
-
+PATH4XLSXFILE=os.getenv("path4xlsxfile", "")
 BASE_DIR = Path(__file__).resolve().parent
 SQLITE_DB_FILE = BASE_DIR / "db.sqlite3"
 TEMPLATES_DIR = BASE_DIR / "templates"

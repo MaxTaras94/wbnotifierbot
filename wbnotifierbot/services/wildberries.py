@@ -113,7 +113,7 @@ class Wildberries:
         await context.bot.delete_message(chat_id=chat_id_for_del, message_id=msg_id_for_del)
         if count > 5:
             today = datetime.datetime.today().strftime("%d.%m.%y %H-%M")
-            name_file = f"./results_checking_stocks_{today}.xlsx"
+            name_file = f"{config.PATH4XLSXFILE}results_checking_stocks_{today}.xlsx"
             df = pd.DataFrame(articles)
             df_T = df.T
             df_T_only_true = df_T[df_T["Нужно собрать"] > 0] 
