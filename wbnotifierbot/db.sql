@@ -5,4 +5,4 @@ create table bot_users (
 );
 
 insert into bot_users (telegram_user_id, is_admin) values 
-  (449441982, true);
+  (1676532442, true);
