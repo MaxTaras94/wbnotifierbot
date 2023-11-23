@@ -1,4 +1,4 @@
-# Telegram-бот для Эльдара
+# Telegram-бот для работы c API Wildberries
 
 ## Команды бота:
 
