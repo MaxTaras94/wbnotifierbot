@@ -46,7 +46,7 @@ cp wbnotifierbot/.env.example wbnotifierbot/.env
 vim wbnotifierbot/.env
 ```
 
-`TELEGRAM_BOT_TOKEN` — токен бота, полученный в BotFather, `TELEGRAM_BOTANIM_CHANNEL_ID` — идентификатор группы книжного клуба, участие в котором будет проверять бот в процессе голосования.
+`TELEGRAM_BOT_TOKEN` — токен бота, полученный в BotFather
 
 Заполняем БД начальными данными:
 
