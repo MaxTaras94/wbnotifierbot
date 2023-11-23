@@ -1,6 +1,6 @@
 ## Деплой бота на сервере
 
-Протестировано на Debian 10.
+Протестировано на Ubuntu 20.4.
 
 Обновляем систему
 
@@ -82,10 +82,10 @@ After=network.target
 [Service]
 User=www
 Group=www-data
-WorkingDirectory=~/code/wbnotifierbot
+WorkingDirectory=home/www/code/wbnotifierbot
 Restart=on-failure
 RestartSec=2s
-ExecStart=/root/.cache/pypoetry/virtualenvs/wbnotifierbot-niaf6P17-py3.12/bin/python -m wbnotifierbot
+ExecStart="путь до интерпритатора в .venv" -m wbnotifierbot
 
 [Install]
 WantedBy=multi-user.target
