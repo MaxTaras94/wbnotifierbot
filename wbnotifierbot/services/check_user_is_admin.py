@@ -13,4 +13,4 @@ async def is_user_admin(telegram_user_id: int) -> bool:
         {"telegram_user_id": telegram_user_id},
         autocommit=True
         )
-    return is_admin
+    return is_admin['is_admin']
